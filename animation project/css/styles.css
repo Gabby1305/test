@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ 
+.sky, .background, .road{
+    position: relative;
+}
+
+.sky {
+    height: 45%;
+    background: skyblue;
+}
+
+.background{
+    height: 25%;
+    background: sienna;
+}
+
+.road{
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 1rem solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.road-divider{
+    position: relative;
+    height: auto;
+    top: 120px;
+    border-bottom: 4px dotted rgb(228, 228, 0)
+}
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.hero {
+    position: absolute;
+    top: -50px;
+    left: -300px;
+    animation-name: move-hero;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes move-hero{
+    from{ transform: translateX(0)}
+    to{ transform: translateX(2300px)}
+}
