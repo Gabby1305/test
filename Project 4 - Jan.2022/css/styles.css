@@ -1,0 +1,64 @@
+
+/* https://css-tricks.com/all-about-floats/ */
+* {
+    box-sizing: border-box; 
+    /* word-wrap: break-word; */
+
+}
+
+html {
+    height: 100vh;
+}
+
+.container {
+    margin: auto auto;
+    width:800px;
+
+    position: fixed;
+    background-color: blue;
+    /*background-color: red;*/  
+}
+/* Layout */
+.card {
+    height: 200px; /* Don't add these three 3 lines, it will break */
+}
+
+.img-left {   /* Image class */
+    position:relative;
+    float: left;
+    height: 300px;
+    width: 200px;
+    /* transform:scale(0.15);*/
+    /* width: 200px; */
+    /* height: 200px;*/
+    /*border-radius: 100px;*/
+    /*border: 1px solid black; */
+}
+
+.img-right {
+    position: relative;
+    float: right;
+    height: 300px;
+    width: 200px;
+    /*border: 1px dotted blue;*/
+}
+
+.content {
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-color: #cae1ff;
+
+    /* For text */
+    font-family: old english;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.container {
+float: relative;
+width: 200px;
+height: 200px;
+background-color: #95a9df;
+}
